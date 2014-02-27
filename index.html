@@ -1,0 +1,54 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Tree Structure</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="shortcut icon" href="img/favicon.ico">
+</head>
+<body>
+
+<div class="container">
+
+    <div id="info">
+        <h1><img src="img/tree_structure.png" align="absmiddle" height="40" alt="Tree" class="logo">Tree Structure</h1>
+
+        <p>In computer science, a tree is a widely used abstract data type (ADT) or data structure implementing this ADT that simulates a hierarchical tree structure, with a root value and subtrees of children, represented as a set of linked nodes.</p>
+
+        <p>A tree data structure can be defined recursively (locally) as a collection of nodes (starting at a root node), where each node is a data structure consisting of a value, together with a list of references to nodes (the "children"), with the constraints that no reference is duplicated, and none points to the root.</p>
+
+        <p><a class="btn-create">Generate a Random Structure</a></p>
+    </div>
+
+    <div id="example">
+        <div class="tree">
+        <ul>
+            <li>
+                <a href="#">Father</a>
+                <ul>
+                    <li><a href="#">Son</a>
+                        <ul>
+                            <li><a href="#">Grandson One</a></li>
+                            <li><a href="#">Grandson Two</a>
+                                <ul>
+                                    <li><a href="#">Great-Grandson</a></li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </li>
+                </ul>
+            </li>
+        </ul>
+        </div>
+    </div>
+
+    <div class="tree"></div>
+</div>
+
+<div class="gitHub">
+    <a href=""><img height="250" src="img/gitHub.png" alt="Fork me :)"></a>
+</div>
+
+<script src="js/tree.js"></script>
+</body>
+</html>
