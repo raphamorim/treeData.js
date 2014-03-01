@@ -11,6 +11,13 @@
   -moz-box-sizing: border-box;
   box-sizing: border-box;
 }
+
+html, body {
+    background: #F8F8F8;
+    margin:0;
+    font-family: helvetica, sans-serif;
+}
+
 main:after,
 nav:after,
 footer:after,
@@ -30,13 +37,6 @@ dl:after {
 }
 hr {display: none;}
 
-
-html, body {
-    background: #F8F8F8;
-    margin:0;
-    font-family: helvetica, sans-serif;
-}
-
 h1 {
     font-size: 25px;
     margin: 20px 20px 15px 0px;
@@ -53,27 +53,28 @@ input {
     margin: 10px;
 }
 
-.container {
+#main, #container {
     position: relative;
     margin: 0 auto;
     width: 820px;
     margin-top: 120px;
 }
+#main {opacity:0;}
 
 #info {
     float: left;
-    width: 520px;
+    width: 515px;
 }
 
 #example {
     float: right;
-    margin: 75px 17px 0px 35px;
+    margin: 60px 0px;
 }
 
 .gitHub {
     position: absolute;
     right: 0;
-    top: 0px;
+    top: 0;
 }
 
 .logo {
@@ -95,20 +96,10 @@ input {
     border-bottom-width: 3px;
     cursor: pointer;
 }
+.btn-create:hover { background-color: #e3e3e3; border-color: rgba(0,0,0,0.5); }
+.btn-create:active { background-color: #CCC; border-color: rgba(0,0,0,0.9); }
 
-.btn-create:hover {
-    background-color: #e3e3e3;
-    border-color: rgba(0,0,0,0.5);
-}
-
-.btn-create:active {
-    background-color: #CCC;
-    border-color: rgba(0,0,0,0.9);
-}
-
-/*Now the CSS*/
-
-
+/* Thee */
 .tree ul {
     padding-top: 20px; position: relative;
 
@@ -129,7 +120,6 @@ input {
 }
 
 /*We will use ::before and ::after to draw the connectors*/
-
 .tree li::before, .tree li::after{
     content: '';
     position: absolute; top: 0; right: 50%;
@@ -199,6 +189,7 @@ right connector from last child*/
 .tree li a:hover, .tree li a:hover+ul li a {
     background: #c8e4f8; color: #000; border: 1px solid #94a0b4;
 }
+
 /*Connector styles on hover*/
 .tree li a:hover+ul li::after,
 .tree li a:hover+ul li::before,
@@ -206,6 +197,3 @@ right connector from last child*/
 .tree li a:hover+ul ul::before{
     border-color:  #94a0b4;
 }
-
-/*Thats all. I hope you enjoyed it.
-Thanks :)*/

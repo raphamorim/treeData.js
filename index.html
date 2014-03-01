@@ -8,7 +8,7 @@
 </head>
 <body>
 
-<div class="container">
+<div id="container">
 
     <div id="info">
         <h1><img src="img/tree_structure.png" align="absmiddle" height="40" alt="Tree" class="logo">Tree Structure</h1>
@@ -22,31 +22,34 @@
 
     <div id="example">
         <div class="tree">
-        <ul>
-            <li>
-                <a href="#">Father</a>
-                <ul>
-                    <li><a href="#">Son</a>
-                        <ul>
-                            <li><a href="#">Grandson One</a></li>
-                            <li><a href="#">Grandson Two</a>
-                                <ul>
-                                    <li><a href="#">Great-Grandson</a></li>
-                                </ul>
-                            </li>
-                        </ul>
-                    </li>
-                </ul>
-            </li>
-        </ul>
+            <ul>
+                <li><a href="#">Father</a>
+                    <ul>
+                        <li><a href="#">Son</a>
+                            <ul>
+                                <li><a href="#">Grandson One</a></li>
+                                <li><a href="#">Grandson Two</a>
+                                    <ul>
+                                        <li><a href="#">Great-Grandson</a>
+                                            <ul>
+                                                <li><a href="#">Great-Great Grandson</a></li>
+                                            </ul>
+                                        </li>
+                                    </ul>
+                                </li>
+                            </ul>
+                        </li>
+                    </ul>
+                </li>
+            </ul>
         </div>
     </div>
-
-    <div class="tree"></div>
 </div>
 
+<div id="main"></div>
+
 <div class="gitHub">
-    <a href=""><img height="250" src="img/gitHub.png" alt="Fork me :)"></a>
+    <a href="https://github.com/raphamorim/treeStructure"><img height="250" src="img/gitHub.png" alt="Fork me :)"></a>
 </div>
 
 <script src="js/tree.js"></script>
