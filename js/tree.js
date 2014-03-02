@@ -20,7 +20,7 @@ window.onload = function() {
           Tree(elements)
         else
           alert('Please sent than more of two valid itens')
-    });
+    }, false);
 
 };
 
@@ -47,16 +47,9 @@ function Tree(el) {
         else
            htmlCode += node(actual, next, futureNext)
 
-        var bla = el.indexOf(1 + parseInt(i));
-        var blah = el.indexOf(2 + parseInt(i));
+        htmlCode += '</ul>';
 
-        el.splice(bla, 1);
-        el.splice(blah, 1);
-
-        // console.log('actual: ' + atual);
-        // console.log('next: ' + next);
-        // console.log('next2: ' + futureNext);
-        // console.log('\n');
+        el.splice(0, 2);
 	  }
 
     treecanvas.innerHTML = htmlCode;
@@ -113,9 +106,16 @@ function fadeOut(el) {
 
 /* Templates */
 function node(father, firstSon, secondSon) {
-    var node = [];
-        node += '<li><a href="#">' + father + '</a><ul>';
-        node += '<li><a href="#">' + firstSon + '</a></li>';
+  var node = [];
+
+    if(father != undefined)
+        node += '<li><a href="#">' + father + '</a>';
+
+    if(firstSon != undefined)
+        node += '<ul><li><a href="#">' + firstSon + '</a></li>';
+
+    if(secondSon != undefined)
         node += '<li><a href="#">' + secondSon + '</a></li>';
+
     return node;
 }
