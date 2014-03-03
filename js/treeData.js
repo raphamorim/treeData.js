@@ -1,3 +1,5 @@
+'use strict';
+
 /*
   var treeDataJs = {
       name    : "TreeData.js",
@@ -8,13 +10,13 @@
 */
 
 /* Receive data and create tree */
-function Tree (treeData, select) {
+function TreeData (data, select) {
     var main = document.querySelector(select);
 
     var treecanvas = document.createElement('div');
         treecanvas.className = 'tree';
 
-    var treeCode = buildTree(treeData, "father");
+    var treeCode = buildTree(data, "father");
 
     treecanvas.innerHTML = treeCode;
 
@@ -23,7 +25,7 @@ function Tree (treeData, select) {
 
 /* Recursive function to build tree structure :) */
 function buildTree (obj, node) {
-    treeString = "<li><a href='#'>" + obj[node].value + "</a>";
+    var treeString = "<li><a href='#'>" + obj[node].value + "</a>";
     var sons = [];
 
     for (var i in obj) {
