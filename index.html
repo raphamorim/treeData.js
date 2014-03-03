@@ -27,12 +27,12 @@
                     <ul>
                         <li><a href="#">Son</a>
                             <ul>
-                                <li><a href="#">Grandson One</a></li>
+                                <li><a href="#">Grandson One</a>
                                 <li><a href="#">Grandson Two</a>
                                     <ul>
                                         <li><a href="#">Great-Grandson</a>
                                             <ul>
-                                                <li><a href="#">Great-Great Grandson</a></li>
+                                                <li><a href="#">Great-Great Grandson</a>
                                             </ul>
                                         </li>
                                     </ul>
@@ -52,7 +52,21 @@
     <a href="https://github.com/raphamorim/treeStructure"><img height="250" src="img/gitHub.png" alt="Fork me :)"></a>
 </div>
 
-<script src="js/tools.js"></script>
+
 <script src="js/tree.js"></script>
+<script type="text/javascript">
+  var tree = {
+        father : {value : "Tree Data Structure", parent : ""},
+        a : {value : "A", parent : "father"},
+        b : {value : "B", parent : "a"},
+        c : {value : "C", parent : "a"},
+        d : {value : "D", parent : "c"},
+        e : {value : "E", parent : "b"},
+        f : {value : "F", parent : "c"},
+        g : {value : "G", parent : "f"}
+  };
+
+  Tree(tree, "#main");
+</script>
 </body>
 </html>
