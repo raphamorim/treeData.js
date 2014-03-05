@@ -16,7 +16,7 @@ function TreeData (data, select) {
     var treecanvas = document.createElement('div');
         treecanvas.className = 'tree';
 
-    var treeCode = buildTree(data, "father");
+    var treeCode = buildTree(data, Object.keys(data)[0]);
 
     treecanvas.innerHTML = treeCode;
 
