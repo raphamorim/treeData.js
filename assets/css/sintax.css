@@ -1,0 +1,29 @@
+.code {
+  background: #23241f;
+  color: #f8f8f2;
+  border-radius: 5px;
+  letter-spacing: 0.12em;
+  padding: 20px;
+  font-family: helvetica;
+  font-size: 15px;
+}
+
+.tag {
+  color: #F92672;
+}
+
+.attr {
+  color: lightgreen;
+}
+
+.el {
+  color: #a6e22e;
+}
+
+.var {
+  color: lightblue;
+}
+
+.property {
+  color: #e6db74;
+}

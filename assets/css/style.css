@@ -1,0 +1,87 @@
+html, body {
+    background: #F8F8F8;
+    margin:0;
+    font-family: helvetica, sans-serif;
+}
+
+main:after,
+nav:after,
+footer:after,
+header:after,
+section:after,
+form:after,
+div:after,
+ul:after,
+ol:after,
+dl:after {
+  content: ".";
+  display: block;
+  clear: both;
+  visibility: hidden;
+  height: 0;
+  overflow: hidden;
+}
+hr {padding: 5px; border: none;}
+
+h1 {
+    font-size: 25px;
+    margin: 20px 20px 55px 0px;
+}
+h1>span {color: #266b77;}
+
+h3 {padding-bottom: 5px; border-bottom: 1px dotted #999; color: #266b77;}
+
+p {
+    margin: 20px 0px;
+    font-size: 16px;
+    line-height: 1.4em;
+}
+
+input {
+    padding: 8px;
+    margin: 10px;
+}
+
+.example {
+    margin-left: 310px;
+}
+
+#main, #container {
+    position: relative;
+    margin: 0 auto;
+    width: 820px;
+    margin-top: 50px;
+}
+
+#info {
+    width: 820px;
+}
+
+.gitHub {
+    position: absolute;
+    right: 0;
+    top: 0;
+}
+
+.logo {
+    padding-right: 14px;
+}
+
+.btn-create {
+    display: inline-block;
+    color: #666;
+    background-color: #eee;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    font-size: 12px;
+    padding: 10px 30px;
+    border-radius: 5px;
+    -moz-border-radius: 5px;
+    -webkit-border-radius: 5px;
+    border: 1px solid rgba(0,0,0,0.3);
+    border-bottom-width: 3px;
+    cursor: pointer;
+    text-decoration: none;
+}
+.btn-create:hover { background-color: #e3e3e3; border-color: rgba(0,0,0,0.5); }
+.btn-create:active { background-color: #CCC; border-color: rgba(0,0,0,0.9); }
