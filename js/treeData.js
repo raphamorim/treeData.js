@@ -15,7 +15,7 @@ function buildTree (obj, node) {
     var sons = [];
     for (var i in obj) {
         if (obj[i].parent == node)
-          sons += i;
+          sons.push(i);
     }
     if (sons.length > 0) {
         treeString += "<ul>";
