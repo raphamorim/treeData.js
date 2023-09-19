@@ -18,8 +18,9 @@
 <script type="text/javascript" src="js/treeData.js"></script>
 <script>
 var tree = {
-    gba : {label: "gba", value : "Game Boy Advance", parent : ""},
-    ds : {label: "ds", value : "Nintendo DS", parent : ""},
+    rng : {label: "rng", value : "What game would you like to RNG?", parent : ""},
+    gba : {label: "gba", value : "Game Boy Advance", parent : "rng"},
+    ds : {label: "ds", value : "Nintendo DS", parent : "rng"},
     frlg : {label: "frlg", value : "Fire Red/Leaf Green", parent : "gba"},
     emerald : {label: "eme", value : "Emerald", parent : "gba"},
     rs : {label: "rs", value : "Ruby/Sapphire", parent : "gba"},
