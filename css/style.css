@@ -49,12 +49,12 @@ input {
 #main, #container {
     position: relative;
     margin: 0 auto;
-    width: 820px;
+    width: 1200px;
     margin-top: 50px;
 }
 
 #info {
-    width: 820px;
+    width: 1200px;
 }
 
 .gitHub {
