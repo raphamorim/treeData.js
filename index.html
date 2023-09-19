@@ -17,20 +17,23 @@
 
 <script type="text/javascript" src="js/treeData.js"></script>
 <script>
-var tree = {
-    rng : {label: "rng", value : "What game would you like to RNG?", parent : ""},
-    gba : {label: "gba", value : "Game Boy Advance", parent : "rng"},
-    ds : {label: "ds", value : "Nintendo DS", parent : "rng"},
-    frlg : {label: "frlg", value : "Fire Red/Leaf Green", parent : "gba"},
-    emerald : {label: "eme", value : "Emerald", parent : "gba"},
-    rs : {label: "rs", value : "Ruby/Sapphire", parent : "gba"},
+var dstree = {
+    ds : {label: "ds", value : "Nintendo DS", parent : ""},
     dpp : {label: "dpp", value : "Diamond/Pearl/Platinum", parent : "ds"},
     hgss : {label: "hgss", value : "Heart Gold/Soul Silver", parent : "ds"},
     bw : {label: "bw", value : "Black/White", parent : "ds"},
     bw2 : {label: "bw2", value : "Black/White 2", parent : "ds"}
 };
 
-TreeData(tree, "#tree");
+TreeData(dstree, "#dstree");
+var gbatree = {
+    gba : {label: "gba", value : "Game Boy Advance", parent : ""},
+    frlg : {label: "frlg", value : "Fire Red/Leaf Green", parent : "gba"},
+    emerald : {label: "eme", value : "Emerald", parent : "gba"},
+    rs : {label: "rs", value : "Ruby/Sapphire", parent : "gba"},
+};
+
+TreeData(gbatree, "#gbatree");
 </script>
 </body>
 </html>
