@@ -18,17 +18,27 @@
 <script type="text/javascript" src="js/treeData.js"></script>
 <script>
 var tree = {
-    top : {label : "#", value : "Pokemon RNG Skill Tree", parent : ""},
-    console : {label : "#", value : "Consoles", parent : "top"},    
-    gba : {label : "#", value : "Game Boy Advance", parent : "console"},
-    ds : {label : "#", value : "Nintendo DS", parent : "console"},
-    dpp : {label : "dpp", value : "Diamon/Pearl/Platinum", parent : "ds"},
-    hgss : {label : "hgss", value : "Heart Gold/Soul Silver", parent : "ds"},
-    bw : {label : "bw", value : "Black/White", parent : "ds"},
-    bw2 : {label : "bw2", value : "Black/White 2", parent : "ds"},
-    frlg : {label: "frlg", value : "Fire Red/Leaf Green", parent : "gba"},
-    emerald : {label: "eme", value : "Emerald", parent : "gba"},
-    rs : {label: "rs", value : "Ruby/Sapphire", parent : "gba"}
+    top : {label : "/.", value : "Pokemon RNG Skill Tree", parent : ""},
+    gen : {label : "/.", value : "Generation", parent : "top"},
+    gen3 : {label : "/.", value : "Gen 3", parent : "gen"},
+    gen4 : {label : "/.", value : "Gen 4", parent : "gen"},
+    gen5 : {label : "/.", value : "Gen 5", parent : "gen"},
+    gba : {label : "/.", value : "Game Boy Advance", parent : "gen3"},
+    gcn : {label : "/.". value: "Nintendo GameCube", parent : "gen3"},
+    colo : {label : "colo". value: "Colosseum", parent : "gcn"},
+    wish : {label : "wish". value: "Wishmaker", parent : "colo"},
+    ageto : {label : "ageto". value: "Ageto", parent : "colo"},
+    xd : {label : "xd". value: "XD Gales", parent : "gcn"},
+    channel : {label : "channel". value: "Channel", parent : "gcn"},
+    ds : {label : "/.", value : "Nintendo DS", parent : "gen4"},
+    dsi : {label : "/.", value: "Nintendo DSi", parent : "gen5"},
+    dpp : {label : "dpp", value : "DPP, parent : "ds"},
+    hgss : {label : "hgss", value : "HGSS", parent : "ds"},
+    bw : {label : "bw", value : "BW", parent : "dsi"},
+    bw2 : {label : "bw2", value : "BW2", parent : "dsi"},
+    frlg : {label: "frlg", value : "FRLG", parent : "gba"},
+    emerald : {label: "eme", value : "EMERALD", parent : "gba"},
+    rs : {label: "rs", value : "RS", parent : "gba"}
 };
 
 TreeData(tree, "#tree");
