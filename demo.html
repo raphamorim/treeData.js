@@ -1,43 +1,73 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
+  <head>
+    <meta charset="UTF-8" />
     <title>TreeData.js</title>
     <!--Optional-->
-    <link rel="stylesheet" href="css/style.css">
-    <link rel="shortcut icon" href="img/favicon.ico">
+    <!-- <link rel="stylesheet" href="css/style.css" /> -->
+    <link rel="shortcut icon" href="img/favicon.ico" />
 
     <!--Required-->
-    <link rel="stylesheet" href="css/treeData.min.css">
-</head>
-<body>
-<div id="container">
-  <div id="tree"></div>
-</div>
+    <link rel="stylesheet" href="css/treeData.css" />
+  </head>
+  <body>
+    <div id="container">
+      <div id="tree"></div>
+    </div>
 
-<script type="text/javascript" src="js/treeData.js"></script>
-<script>
-var tree = {
-     zelda : {value : "Zelda Timeline", parent : ""},
-     a : {value : "Skyward Sword", parent : "zelda"},
-     b : {value : "The Minish Cap", parent : "a"},
-     c : {value : "Four Swords", parent : "b"},
-     d : {value : "Ocarina of Time", parent : "c"},
-     e : {value : "A link to Past", parent : "d"},
-     f : {value : "Oracle of Seasons & Oracle of Ages", parent : "e"},
-     g : {value : "Link's Awakening", parent : "f"},
-     h : {value : "The Legend of Zelda", parent : "g"},
-     i : {value : "Adventure of Link", parent : "h"},
-     j : {value : "Majora's Mask", parent : "d"},
-     k : {value : "Twilight Princess", parent : "j"},
-     l : {value : "Four Swords", parent : "k"},
-     m : {value : "The Wind Waker", parent : "d"},
-     n : {value : "Phanthom Hourglass", parent : "m"},
-     o : {value : "Spirit Tracks", parent : "n"}
-
-};
-
-TreeData(tree, "#tree");
-</script>
-</body>
+    <script type="text/javascript" src="js/treeData.js"></script>
+    <script>
+     
+      var tree = {
+        zelda: { value: "Zelda Timeline", parent: "" },
+        lvl1_1: { value: "Skyward Sword", parent: "zelda" },
+        lvl1_2: { value: "The Minish Cap", parent: "zelda" },
+        lvl1_3: { value: "Four Swords", parent: "zelda" },
+        lvl1_4: { value: "Ocarina of Time", parent: "zelda" },
+        lvl1_5: { value: "Skyward Sword", parent: "zelda" },
+        lvl1_6: { value: "The Minish Cap", parent: "zelda" },
+        lvl1_7: { value: "Four Swords", parent: "zelda" },
+        lvl1_8: { value: "Ocarina of Time", parent: "zelda" },
+        lvl1_9: { value: "Skyward Sword", parent: "zelda" },
+        lvl1_10: { value: "The Minish Cap", parent: "zelda" },
+        lvl1_11: { value: "Four Swords", parent: "zelda" },
+        lvl2_2_1: { value: "The Legend of Zelda", parent: "lvl1_2" },
+        lvl2_2_2: { value: "Adventure of Link", parent: "lvl1_2" },
+        lvl2_2_3: { value: "Majora's Mask", parent: "lvl1_2" },
+        lvl2_2_4: { value: "Majora's Mask", parent: "lvl1_2" },
+        lvl2_3_1: { value: "The Legend of Zelda", parent: "lvl1_3" },
+        lvl2_3_2: { value: "Adventure of Link", parent: "lvl1_3" },
+        lvl2_3_3: { value: "Majora's Mask", parent: "lvl1_3" },
+        lvl2_5_1: { value: "The Legend of Zelda", parent: "lvl1_5" },
+        lvl2_5_2: { value: "Majora's Mask", parent: "lvl1_5" },
+        lvl2_5_3: { value: "The Minish Cap", parent: "lvl1_5" },
+        lvl2_5_4: { value: "The Legend of Zelda", parent: "lvl1_5" },
+        lvl2_5_5: { value: "Majora's Mask", parent: "lvl1_5" },
+        lvl2_5_6: { value: "The Minish Cap", parent: "lvl1_5" },
+        lvl2_5_7: { value: "The Legend of Zelda", parent: "lvl1_5" },
+        lvl2_5_8: { value: "Majora's Mask", parent: "lvl1_5" },
+        lvl2_6_1: { value: "The Minish Cap", parent: "lvl1_6" },
+        lvl2_6_2: { value: "Majora's Mask", parent: "lvl1_6" },
+        lvl2_6_3: { value: "The Legend of Zelda", parent: "lvl1_6" },
+        lvl2_6_4: { value: "Majora's Mask", parent: "lvl1_6" },
+        lvl2_9_1: { value: "The Legend of Zelda", parent: "lvl1_9" },
+        lvl2_9_2: { value: "The Minish Cap", parent: "lvl1_9" },
+        lvl2_9_3: { value: "Majora's Mask", parent: "lvl1_9" },
+        lvl2_9_4: { value: "The Minish Cap", parent: "lvl1_9" },
+        lvl2_9_5: { value: "The Legend of Zelda", parent: "lvl1_9" },
+        lvl2_9_6: { value: "Majora's Mask", parent: "lvl1_9" },
+        lvl2_9_7: { value: "The Minish Cap", parent: "lvl1_9" },
+        lvl2_9_8: { value: "The Legend of Zelda", parent: "lvl1_9" }
+      };
+/* e: { value: "A link to Past", parent: "a2" },
+        f: { value: "Oracle of Seasons & Oracle of Ages", parent: "a2" },
+        g: { value: "Link's Awakening", parent: "a2" },
+        k: { value: "Twilight Princess", parent: "c" },
+        l: { value: "Four Swords", parent: "c" },
+        m: { value: "The Wind Waker", parent: "c" },
+        n: { value: "Phanthom Hourglass", parent: "d" },
+        o: { value: "Spirit Tracks", parent: "d" }, */
+      TreeData(tree, "#tree");
+    </script>
+  </body>
 </html>
