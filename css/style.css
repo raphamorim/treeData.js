@@ -49,9 +49,8 @@ input {
 #main, #container {
     position: relative;
     margin: 0 auto;
-    width: 80%;
+    width: 820px;
     margin-top: 50px;
-    overflow: auto;
 }
 
 #info {

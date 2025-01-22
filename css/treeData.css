@@ -4,93 +4,25 @@
 }
 
 .tree ul {
-    display: flex; flex-direction: column;
-    justify-content: stretch;
-    gap: 10px;
-    position: relative;
-    padding: 0px; margin: 0; 
+    padding-top: 20px; position: relative;
 
     transition: all 0.5s;
     -webkit-transition: all 0.5s;
     -moz-transition: all 0.5s;
 }
-.tree p {
-    margin: 0; 
-    font-family: arial, verdana, tahoma;
-}
+
 .tree li {
-    position: relative;
-    display: flex;
-    gap: 10px;
-    padding: 0; margin: 0;
+    float: left; text-align: center;
     list-style-type: none;
-
-    transition: all 0.5s;
-    -webkit-transition: all 0.5s;
-    -moz-transition: all 0.5s;
-}
-
-
-.tree .card {
     position: relative;
-    width: 20vw;
-    min-width: 300px;
-    padding: 1em;
-    border: 1px solid #ccc;
-    text-decoration: none;
-    color: hsla(0, 0%, 0%, 0.9);
-    font-family: arial, verdana, tahoma;
-    font-size: 16px;
-
-    border-radius: 5px;
-    -webkit-border-radius: 5px;
-    -moz-border-radius: 5px;
+    padding: 20px 5px 0 5px;
 
     transition: all 0.5s;
     -webkit-transition: all 0.5s;
     -moz-transition: all 0.5s;
 }
-.tree > li > .card {
-    background-color: hsla(210, 41%, 83%, 1);
-}
-.tree > li > ul > li > .card {
-    background-color: hsla(210, 41%, 83%, 0.5);
-}
-.tree > li > ul > li > ul > li > .card {
-    background-color: hsla(210, 41%, 83%, 0.2);
-}
-.tree .card__box {
-    position: sticky;
-    top: 1em;
-    display: flex;
-    flex-direction: column;
-    gap: 10px;
-}
-.tree .card__title {
-    font-weight: bold;
-    text-align: center;
-    /* font-size: 18px; */
-}
-.tree .card__boss {
-    display: flex;
-    justify-content: space-between;
-}
-.tree .card__descr {
-    font-size: 14px;
-}
-/* .tree li a:hover, .tree li a:hover+ul li a {
-    background: #c8e4f8; color: #000; border: 1px solid #94a0b4;
-}
 
-.tree li a:hover+ul li::after,
-.tree li a:hover+ul li::before,
-.tree li a:hover+ul::before,
-.tree li a:hover+ul ul::before{
-    border-color:  #94a0b4;
-} */
-
-
-/* .tree li::before, .tree li::after{
+.tree li::before, .tree li::after{
     content: '';
     position: absolute; top: 0; right: 50%;
     border-top: 1px solid #ccc;
@@ -124,9 +56,38 @@
     -moz-border-radius: 5px 0 0 0;
 }
 
- .tree ul ul::before{
+.tree ul ul::before{
     content: '';
     position: absolute; top: 0; left: 50%;
     border-left: 1px solid #ccc;
     width: 0; height: 20px;
-} */
+}
+
+.tree li a{
+    border: 1px solid #ccc;
+    padding: 5px 10px;
+    text-decoration: none;
+    color: #666;
+    font-family: arial, verdana, tahoma;
+    font-size: 14px;
+    display: inline-block;
+
+    border-radius: 5px;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+
+    transition: all 0.5s;
+    -webkit-transition: all 0.5s;
+    -moz-transition: all 0.5s;
+}
+
+.tree li a:hover, .tree li a:hover+ul li a {
+    background: #c8e4f8; color: #000; border: 1px solid #94a0b4;
+}
+
+.tree li a:hover+ul li::after,
+.tree li a:hover+ul li::before,
+.tree li a:hover+ul::before,
+.tree li a:hover+ul ul::before{
+    border-color:  #94a0b4;
+}
